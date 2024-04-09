@@ -1,9 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resultados2</title>
+</head>
+<body>
 <?php 
-    if(isset($_POST['genero'])){
+    
     $genero = $_POST['genero'];
     echo "<p>Gênero selecionado: $genero</p>";
-    }
-    echo "<h3>Idiomas selecionados:</h3>";
+    
+    echo "<h1>Idiomas selecionados:</h1>";
     if(isset($_POST['ing'])) {
         echo "<p>Inglês</p>";
     }
@@ -15,3 +23,5 @@
     }
     
 ?>
+</body>
+</html>
